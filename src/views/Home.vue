@@ -1,7 +1,13 @@
 <template>
   <div>
-    <h1>Home</h1>
-    <p>{{api}}</p>
+    <div v-if="loading">
+      <PageLoading />
+    </div>
+    <div v-else>
+      <h1>Home</h1>
+      <p>{{api}}</p>
+    </div>
+    
   </div>
 </template>
 
@@ -11,7 +17,7 @@ export default {
   name: "home",
   mixins: [fetchData],
   created() {
-    this.fetchData();
+    this.fetchData("/home");
   }
 };
 </script>
