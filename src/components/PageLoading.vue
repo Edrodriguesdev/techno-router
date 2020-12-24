@@ -18,6 +18,9 @@ export default {
   display: inline-block;
   width: 10px;
   height: 10px;
+  position: relative;
+  top: 280px;
+  left: 350px;
   border-radius: 10px;
   background: #4b8;
   margin: 4px;
