@@ -61,6 +61,8 @@ a.router-link-active {
   grid-gap:30px;
 }
 
+
+
 @media screen and (max-width: 400px){
   .conteudo {
     display: block;

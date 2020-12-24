@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="center">
     <div v-if="loading">
       <PageLoading />
     </div>
@@ -19,10 +19,17 @@
 import fetchData from '@/mixins/fetchData.js'
 
 export default {
-  name: 'Contato',
+  name: "contato",
   mixins: [fetchData],
   created() {
     this.fetchData("/contato");
   }
 }
 </script>
+
+<style>
+.center {
+  position: relative;
+  top: 120px;
+}
+</style>
